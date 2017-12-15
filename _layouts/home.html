@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<!--Main Slider-->
+        {% include slider.html %}
+        <!--Main Slider  end-->
 <section class="contents">
             <div class="container">
                 <div class="row">
@@ -13,7 +16,7 @@ layout: default
                             <div class="blog-item">
                                 <div class="blog-post">
                                     <div class="blogpost-img">
-                                        <a href="#"><img src="{{ post.main_img }}" alt="{{ post.title }}"></a>
+                                        <a href="{{ post.url }}" target="blank"><img src="{{ post.main_img }}" alt="{{ post.title }}"></a>
                                     </div>
                                     <div class="post-share">
                                         <div class="social-share">
@@ -29,7 +32,7 @@ layout: default
                                     </div>
                                     <div class="blogpost-info">
                                         <p class="post-category"><a href="#" title="Posts by category Travel">{{ post.categories }}</a></p>
-                                        <h3 class="post-title"><a href="#">{{ post.title | escape }}</a></h3>
+                                        <h3 class="post-title"><a href="{{ post.url }}" target="blank">{{ post.title | escape }}</a></h3>
                                         <div class="post-meta">
                                             <span><a href="#"><i class="fa fa-user"></i> Par {{ post.author }}</a></span>
                                             <span><a href="#"><i class="fa fa-clock-o"></i> {{ post.date | date: date_format }}</a></span>

@@ -1,25 +1,260 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!--Breadcrumbs -->
+        <section class="page-info">
+            <div class="container clearfix">
+                <div class="pull-left">
+                    <h3>Blog Detail</h3>
+                </div>
+                <div class="pull-right">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Blog Detail</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Breadcrumbs   end-->
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
-  </header>
+        <!--page contents-->
+        <section class="contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="post-detail  padd-right-30">
+                            <div class="postdetail-img">
+                                <a href="#"><img src="/images/blogs/blog-post-1.jpg" alt="Post"></a>
+                            </div>
+                            <div class="post-share">
+                                <div class="social-share">
+                                    <span class="title-share">Share:</span>
+                                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                                <div class="coment-share">
+                                    <a href="#"><i class="fa fa-comment"></i> 3</a>
+                                </div>
+                            </div>
+                            <div class="postdtl-info">
+                                <p class="post-category"><a href="#">{{ page.categories }}</a></p>
+                                <h3 class="post-title"><a href="#">{{ page.title }}</a></h3>
+                                <div class="post-meta">
+                                    <span><a href="#"><i class="fa fa-user"></i> By {{ page.author }}</a></span>
+                                    <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
+                                </div>
+                                <p>{{ content }}</p>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+                            </div>
+                            <div class="comment-box">
+                                <div class="title">
+                                    <h2>Apropos de l auteur</h2>
+                                </div>
+                                <div class="single-comment-box">
+                                    <div class="img-box">
+                                        <div class="inner-box">
+                                            <img src="/images/post/author1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h3> {{ page.author }}</h3>
+                                        <div class="meta-box clearfix">
+                                            <span class="pull-left">{{ page.date | date: date_format }}</span>
+                                            <a href="#" class="reply pull-right">Reply</a>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h2>A voir aussi</h2>
+                            </div>
+                            <div class="related_blogs rlpost-fullwidth">
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-</article>
+                                <!-- blog-item Post -->
+                                <div class="blog-item">
+                                    <div class="blog-post">
+                                        <div class="blogpost-img">
+                                            <a href="#"><img src="/images/blogs/blog-post-2.jpg" alt="Post"></a>
+                                        </div>
+                                        <div class="post-share">
+                                            <div class="social-share">
+                                                <span class="title-share">Share:</span>
+                                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                            <div class="coment-share">
+                                                <a href="#"><i class="fa fa-comment"></i> 3</a>
+                                            </div>
+                                        </div>
+                                        <div class="blogpost-info">
+                                            <p class="post-category"><a href="#" title="Posts by category Travel">Lifestyle</a></p>
+                                            <h3 class="post-title"><a href="#">Life is a one time offer</a></h3>
+                                            <div class="post-meta">
+                                                <span><a href="#"><i class="fa fa-user"></i> By Sojib Rahman</a></span>
+                                                <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- blog-item Post end -->
+
+                                <!-- blog-item Post -->
+                                <div class="blog-item">
+                                    <div class="blog-post">
+                                        <div class="blogpost-img">
+                                            <a href="#"><img src="/images/blogs/blog-post-1.jpg" alt="Post"></a>
+                                        </div>
+                                        <div class="post-share">
+                                            <div class="social-share">
+                                                <span class="title-share">Share:</span>
+                                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                            <div class="coment-share">
+                                                <a href="#"><i class="fa fa-comment"></i> 3</a>
+                                            </div>
+                                        </div>
+                                        <div class="blogpost-info">
+                                            <p class="post-category"><a href="#" title="Posts by category Travel">Nature</a></p>
+                                            <h3 class="post-title"><a href="#">If you truly love nature</a></h3>
+                                            <div class="post-meta">
+                                                <span><a href="#"><i class="fa fa-user"></i> By Sojib Rahman</a></span>
+                                                <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- blog-item Post end -->
+
+                                <!-- blog-item Post -->
+                                <div class="blog-item">
+                                    <div class="blog-post">
+                                        <div class="blogpost-img">
+                                            <a href="#"><img src="/images/blogs/blog-post-1.jpg" alt="Post"></a>
+                                        </div>
+                                        <div class="post-share">
+                                            <div class="social-share">
+                                                <span class="title-share">Share:</span>
+                                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                            <div class="coment-share">
+                                                <a href="#"><i class="fa fa-comment"></i> 3</a>
+                                            </div>
+                                        </div>
+                                        <div class="blogpost-info">
+                                            <p class="post-category"><a href="#" title="Posts by category Travel">Travel</a></p>
+                                            <h3 class="post-title"><a href="#">Travel teaches toleration</a></h3>
+                                            <div class="post-meta">
+                                                <span><a href="#"><i class="fa fa-user"></i> By Sojib Rahman</a></span>
+                                                <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- blog-item Post end -->
+
+                            </div>
+
+                            <div class="comment-box">
+                                <div class="title">
+                                    <h2>2 Comments</h2>
+                                </div>
+                                <div class="single-comment-box">
+                                    <div class="img-box">
+                                        <div class="inner-box">
+                                            <img src="/images/post/author1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h3>Jhon Chena</h3>
+                                        <div class="meta-box clearfix">
+                                            <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
+                                            <a href="#" class="reply pull-right">Reply</a>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
+                                    </div>
+                                </div>
+                                <div class="single-comment-box reply-comment">
+                                    <div class="img-box">
+                                        <div class="inner-box">
+                                            <img src="/images/post/author1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h3>Jhon Chena</h3>
+                                        <div class="meta-box clearfix">
+                                            <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
+                                            <a href="#" class="reply pull-right">Reply</a>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
+                                    </div>
+                                </div>
+                                <div class="single-comment-box">
+                                    <div class="img-box">
+                                        <div class="inner-box">
+                                            <img src="/images/post/author1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h3>Jhon Chena</h3>
+                                        <div class="meta-box clearfix">
+                                            <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
+                                            <a href="#" class="reply pull-right">Reply</a>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
+                                    </div>
+                                </div>
+                                <div class="single-comment-box reply-comment">
+                                    <div class="img-box">
+                                        <div class="inner-box">
+                                            <img src="/images/post/author1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h3>Jhon Chena</h3>
+                                        <div class="meta-box clearfix">
+                                            <span class="pull-left">24 Feb, 2015 at 2:40pm</span>
+                                            <a href="#" class="reply pull-right">Reply</a>
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s,</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment-form contact-content">
+                                <div class="title">
+                                    <h2>Leave a Comment</h2>
+                                </div>
+                                <form action="#" class="contact-form row" id="contact-page-contact-form" novalidate="novalidate">
+                                    <div class="col-md-6">
+                                        <input name="name" placeholder="Name" type="text">
+                                        <input name="email" placeholder="Email" type="text">
+                                        <input name="phone" placeholder="Phone" type="text">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <button class="btn-two" type="submit">Post Comment</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!--page contents end  -->
