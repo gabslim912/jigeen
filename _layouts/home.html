@@ -39,7 +39,7 @@ layout: default
                                         </div>
                                         <p>{{ post.mini_desc }}</p>
                                         <div class="read-more">
-                                            <a href="#" title="Read More">Lire la suite</a>
+                                            <a href="{{ post.url }}" title="Read More"  target="blank">Lire la suite</a>
                                         </div>
                                     </div>
                                 </div>
@@ -61,35 +61,13 @@ layout: default
         </section>
         <!--insta-full-gallery  -->
         <section class="insta-full-gallery clearfix">
-            <h2 class="instahd"><span>Categories</span></h2>
+            <h2 class="instahd"><span>Rubriques</span></h2>
             <div class="slide-insta">
+            {% for rubrique in site.rubriques %}
                 <div class="insta-item">
-                    <a href="#"><img src="images/insta/1.jpg" alt="image" /><span>Travel</span></a>
+                    <a href="#"><img src="{{ rubrique.image }}" alt="image" /><span>{{ rubrique.title }}</span></a>
                 </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/2.jpg" alt="image" /><span>Travel</span></a>
-                </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/3.jpg" alt="image" /><span>Travel</span></a>
-                </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/4.jpg" alt="image" /><span>Travel</span></a>
-                </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/5.jpg" alt="image" /><span>Travel</span></a>
-                </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/6.jpg" alt="image" /><span>Travel</span></a>
-                </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/7.jpg" alt="image" /><span>Travel</span></a>
-                </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/8.jpg" alt="image" /><span>Travel</span></a>
-                </div>
-                <div class="insta-item">
-                    <a href="#"><img src="images/insta/9.jpg" alt="image" /><span>Travel</span></a>
-                </div>
+            {% endfor %}
             </div>
         </section>
         <!--insta-full-gallery end  -->
