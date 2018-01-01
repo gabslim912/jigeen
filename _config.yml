@@ -24,8 +24,8 @@ description: 'Je reussirais dans certaines taches mieux que dans d''autres mais 
   moins j''essaie de tout faire. I''m a women, I''m superhuman
 
 '
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
