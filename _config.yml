@@ -2,14 +2,15 @@
 title: JIGEEN - I'M A WOMEN I'M SUPERHUMAN
 timezone: UTC
 collections:
+  categories:
+    title: Categories
+    output: true
+    permalink: "/categories"
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
-    output: true
-  categories:
-    title: categories
     output: true
 email: contact@jigeen.com
 tel: "+221 77 452 87 06"
