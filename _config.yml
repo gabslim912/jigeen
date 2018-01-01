@@ -11,6 +11,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  categories:
+    title: categories
+    output: true
 email: contact@jigeen.com
 tel: "+221 77 452 87 06"
 description: 'Je reussirais dans certaines taches mieux que dans d''autres mais au
