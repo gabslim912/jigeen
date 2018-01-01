@@ -12,6 +12,9 @@ collections:
   rubriques:
     title: Rubriques
     output: true
+  sliders:
+    title: Sliders
+    output: true
   uploads:
     title: Uploads
     output: true
