@@ -35,7 +35,6 @@
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
-
 <body>
     <div class="page-wrapper">
 
@@ -222,12 +221,12 @@
         <section class="page-info">
             <div class="container clearfix">
                 <div class="pull-left">
-                    <h3>About Me</h3>
+                    <h3>Contact</h3>
                 </div>
                 <div class="pull-right">
                     <ul class="bread-crumb clearfix">
                         <li><a href="index.html">Home</a></li>
-                        <li>About Me</li>
+                        <li>Contact</li>
                     </ul>
                 </div>
             </div>
@@ -237,193 +236,87 @@
         <!--page contents-->
         <section class="contents">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <div class="aboutme-page">
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="left-side">
-                                        <img src="images/resource/businessman-2.png" alt="image">
-                                    </div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="right-side">
-                                        <h4>To be a blogger and freelancer was the dream of my life</h4>
-                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit Perfer repudiandae nostrum alias quibusdam! </h5>
-                                        <p>No singulis postulant his, per decore elaboraret sadipscing Id namwisi accusamus dolro ametmoderatius, denique mediocrem voluptatum. per decore elaboraret sadipscing te labitursaperetnec amet. Eos in quis eripuit. Minim theophrastus eum id. Eos an graece libris inter- esset. Eu duo mentitum maluisset </p>
-                                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-                                        <img class="signature" src="images/resource/signature.png" alt="image" />
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--counter-section-->
-            <section class="fact-counter-section">
-                <div class="container">
+                <!-- contect-page-section -->
+                <div class="contact-section">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-fact-counter clearfix">
-                                <div class="text-box">
-                                    <div class="icon-box">
-                                        <i class="fa fa-users"></i>
+
+                        <div class="inner-box">
+
+                            <div class="contact-info row">
+                                <ul>
+                                    <li class="col-sm-4">
+                                        <span class="icon flaticon-placeholder"></span>
+                                        <h3>Adresse</h3> 
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <span class="icon fa fa-envelope-o"></span>
+                                        <h3>Email</h3> contact@jigeen.com
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <span class="icon flaticon-phone-call"></span>
+                                        <h3>PHONE</h3> +221 77 452 87 06
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <h2 class="titlehd"><span>Envoyez-nous un message</span></h2>
+                        <!--Column-->
+                        <div class="column col-md-7 col-sm-6 col-xs-12">
+
+                            <div class="contact-form default-form">
+                                <form method="post" action="#" id="contact-form" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input name="username" value="" placeholder="Username" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input name="email" value="" placeholder="Email" type="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <input name="phone" value="" placeholder="Phone Number" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <textarea name="message" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <button type="submit" class="btn-one">ENVOYER</button>
+                                        </div>
                                     </div>
-                                    <span class="number">
-										<span class="timer" data-from="50" data-to="20000" data-speed="5000" data-refresh-interval="50">980</span>+
-                                    </span>
-                                    <p>POPULAR POSTS</p>
-                                </div>
+                                </form>
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-fact-counter clearfix">
-                                <div class="text-box">
-                                    <div class="icon-box">
-                                        <i class="fa fa-smile-o"></i>
-                                    </div>
-                                    <span class="number">
-										<span class="timer" data-from="5" data-to="700" data-speed="5000" data-refresh-interval="50">700</span>+
-                                    </span>
-                                    <p>HAPPY READERS</p>
-                                </div>
+
+                        <!--Column-->
+                        <div class="column col-md-5 col-sm-6 col-xs-12">
+
+                            <!--google map-->
+                            <div class="map">
+                                <div class="google-map" id="contact-google-map" style="height:345px; width:100%;"></div>
                             </div>
+                            <!--google map end-->
+
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-fact-counter clearfix">
-                                <div class="text-box">
-                                    <div class="icon-box">
-                                        <i class="fa fa-clone"></i>
-                                    </div>
-                                    <span class="number">
-										<span class="timer" data-from="10" data-to="2450" data-speed="5000" data-refresh-interval="50">2450</span>+
-                                    </span>
-                                    <p>FINISHED BLOGS</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-fact-counter clearfix bdrn">
-                                <div class="text-box">
-                                    <div class="icon-box">
-                                        <i class="fa fa-trophy"></i>
-                                    </div>
-                                    <span class="number">
-										<span class="timer" data-from="5" data-to="468" data-speed="5000" data-refresh-interval="50">468</span>+
-                                    </span>
-                                    <p>AWARDS WON</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
-            </section>
-            <!--counter-section end-->
-            <div class="container">
-                <div class="pposttitle">
-                    <h2>My Popular posts</h2>
-                </div>
-                <div class="related_blogs rlpost-fullwidth">
-
-                    <!-- blog-item Post -->
-                    <div class="blog-item">
-                        <div class="blog-post">
-                            <div class="blogpost-img">
-                                <a href="#"><img src="images/blogs/blog-post-2.jpg" alt="Post"></a>
-                            </div>
-                            <div class="post-share">
-                                <div class="social-share">
-                                    <span class="title-share">Share:</span>
-                                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                </div>
-                                <div class="coment-share">
-                                    <a href="#"><i class="fa fa-comment"></i> 3</a>
-                                </div>
-                            </div>
-                            <div class="blogpost-info">
-                                <p class="post-category"><a href="#" title="Posts by category Travel">Travel</a></p>
-                                <h3 class="post-title"><a href="#">Photo of a girl in flowers</a></h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i> By Sojib Rahman</a></span>
-                                    <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blog-item Post end -->
-
-                    <!-- blog-item Post -->
-                    <div class="blog-item">
-                        <div class="blog-post">
-                            <div class="blogpost-img">
-                                <a href="#"><img src="images/blogs/blog-post-3.jpg" alt="Post"></a>
-                            </div>
-                            <div class="post-share">
-                                <div class="social-share">
-                                    <span class="title-share">Share:</span>
-                                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                </div>
-                                <div class="coment-share">
-                                    <a href="#"><i class="fa fa-comment"></i> 3</a>
-                                </div>
-                            </div>
-                            <div class="blogpost-info">
-                                <p class="post-category"><a href="#" title="Posts by category Travel">Travel</a></p>
-                                <h3 class="post-title"><a href="#">Photo of a girl in flowers</a></h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i> By Sojib Rahman</a></span>
-                                    <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blog-item Post end -->
-
-                    <!-- blog-item Post -->
-                    <div class="blog-item">
-                        <div class="blog-post">
-                            <div class="blogpost-img">
-                                <a href="#"><img src="images/blogs/blog-post-1.jpg" alt="Post"></a>
-                            </div>
-                            <div class="post-share">
-                                <div class="social-share">
-                                    <span class="title-share">Share:</span>
-                                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                </div>
-                                <div class="coment-share">
-                                    <a href="#"><i class="fa fa-comment"></i> 3</a>
-                                </div>
-                            </div>
-                            <div class="blogpost-info">
-                                <p class="post-category"><a href="#" title="Posts by category Travel">Travel</a></p>
-                                <h3 class="post-title"><a href="#">Photo of a girl in flowers</a></h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i> By Sojib Rahman</a></span>
-                                    <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blog-item Post end -->
-                </div>
-
-            </div>
-
+             </div>
         </section>
-        <!--page contents end  -->
 
         <footer>
             <div class="footer-area">
@@ -540,9 +433,6 @@
 
     <!-- script JS  -->
     <script src="/js/script.js"></script>
-
-       
-
 </body>
 
 </html>

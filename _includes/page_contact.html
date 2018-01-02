@@ -1,0 +1,100 @@
+<!--Breadcrumbs -->
+        <section class="page-info">
+            <div class="container clearfix">
+                <div class="pull-left">
+                    <h3>Contact</h3>
+                </div>
+                <div class="pull-right">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Breadcrumbs   end-->
+
+        <!--page contents-->
+        <section class="contents">
+            <div class="container">
+
+                <!-- contect-page-section -->
+                <div class="contact-section">
+                    <div class="row">
+
+                        <div class="inner-box">
+
+                            <div class="contact-info row">
+                                <ul>
+                                    <li class="col-sm-4">
+                                        <span class="icon flaticon-placeholder"></span>
+                                        <h3>Adresse</h3> {{ site.adresse }}
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <span class="icon fa fa-envelope-o"></span>
+                                        <h3>Email</h3> {{ site.email }}
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <span class="icon flaticon-phone-call"></span>
+                                        <h3>PHONE</h3> {{ site.tel }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <h2 class="titlehd"><span>Envoyez-nous un message</span></h2>
+                        <!--Column-->
+                        <div class="column col-md-7 col-sm-6 col-xs-12">
+
+                            <div class="contact-form default-form">
+                                <form method="post" action="#" id="contact-form" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input name="username" value="" placeholder="Username" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input name="email" value="" placeholder="Email" type="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <input name="phone" value="" placeholder="Phone Number" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <textarea name="message" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <button type="submit" class="btn-one">ENVOYER</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <!--Column-->
+                        <div class="column col-md-5 col-sm-6 col-xs-12">
+
+                            <!--google map-->
+                            <div class="map">
+                                <div class="google-map" id="contact-google-map" style="height:345px; width:100%;"></div>
+                            </div>
+                            <!--google map end-->
+
+                        </div>
+
+                    </div>
+                </div>
+             </div>
+        </section>
