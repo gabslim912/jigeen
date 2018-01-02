@@ -11,3 +11,11 @@ fields:
   type: datetime
   hidden: false
   default: ''
+- type: textarea
+  name: description
+  label: Description
+  config:
+    required: true
+- type: file
+  label: Image
+  name: image
