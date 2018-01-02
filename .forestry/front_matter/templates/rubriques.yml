@@ -9,5 +9,11 @@ fields:
 - name: date
   label: Date
   type: datetime
-  hidden: false
+  hidden: true
   default: ''
+- type: textarea
+  name: description
+  label: Description
+- type: file
+  name: image
+  label: Image
