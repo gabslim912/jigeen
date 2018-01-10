@@ -1,0 +1,69 @@
+---
+pages:
+- _posts/2018-01-02-connaitre-ses-cheveux.md
+- _posts/2017-09-19-welcome-to-jekyll.markdown
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: author
+  label: Author
+  type: text
+  hidden: false
+  default: ''
+- name: mini_desc
+  label: Mini desc
+  type: text
+  hidden: false
+  default: ''
+- type: select
+  name: categories
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Societe
+    - Soins & beaute
+    - Actualites
+  label: Categories
+  description: Choisissez la catégorie correspondant
+  default: Societe
+- type: select
+  name: rubriques
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Ado & societe
+    - Femme & Societe
+    - Tradition
+    - Maquillage
+    - Cheveux
+    - Trucs & Astuces
+    - People
+    - Buzz
+  label: Rubriques
+  description: Selectionnez la rubrique correspondante
+  default: Ado & societe
+- name: main_img
+  label: Main img
+  type: file
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true

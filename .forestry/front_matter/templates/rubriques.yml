@@ -1,0 +1,21 @@
+---
+pages:
+- _rubriques/tradition.markdown
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: true
+  default: ''
+- type: textarea
+  name: description
+  label: Description
+- type: file
+  name: image
+  label: Image
