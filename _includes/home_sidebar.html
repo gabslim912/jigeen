@@ -1,14 +1,6 @@
 <div class="col-sm-12 col-md-3">
                         <div class="sidebar">
-                            <div class="widget aboutme">
-                                <h4 class="widget-title">Apropos de moi</h4>
-                                <div class="widget-box">
-                                    <div class="aboutmeimg"><img src="images/widget/about2.jpg"  alt="image" /></div>
-                                    <h5>Animatrice tele & Blogueuse</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                    <span class="sign"><img src="images/widget/signature.png"  alt="image" /></span>
-                                </div>
-                            </div>
+                            
                             <div class="widget w-subscribe">
                                 <h4 class="widget-title">Reseaux sociaux</h4>
                                 <div class="widget-box">
@@ -57,15 +49,17 @@
                             <div class="widget w-insta">
                                 <h4 class="widget-title">Latest Posts</h4>
                                 <div class="widget-box">
-                                    {% for post in site.posts %}
+                                    
+                                    {% for post in site.posts limit: 5 %}
                                     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                                    
                                     <div class="side-letest">
                                         <div class="sidelist-img">
-                                            <a href="#"><img src="{{ post.main_img }}" alt="image"></a>
+                                            <a href="{{ post.url }}"><img src="{{ post.main_img }}" alt="image"></a>
                                         </div>
                                         <div class="sidelist-info">
-                                            <h4><a href="#">{{ post.title }}</a></h4>
-                                            <h5><a href="#">{{ post.categories }}</a></h5>
+                                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                            <h5>{{ post.rubriques }}</h5>
                                             <!-- <span class="post-date">{{ post.date }}</span> -->
                                         </div>
                                     </div>
@@ -78,7 +72,7 @@
                                 <div class="widget-box">
                                     <ul class="srch_catagory">
                                     {% for category in site.categories %}
-                                        <li><a href="#">{{ category.title }}<span class="post_count">(1)</span></a></li>
+                                        <li>{{ category.title }}<span class="post_count">(1)</span></li>
                                         
                                     {% endfor %}
                                     </ul>
@@ -90,7 +84,7 @@
                                 <div class="widget-box">
                                     <ul class="srchtags">
                                     {% for rubrique in site.rubriques %}
-                                        <li><a href="#">{{ rubrique.title }} </a></li>
+                                        <li><a href="{{ rubrique.url }}">{{ rubrique.title }} </a></li>
                                         
                                     {% endfor %}
                                     </ul>

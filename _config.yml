@@ -14,6 +14,9 @@ collections:
   sliders:
     title: Sliders
     output: true
+  auteurs:
+    title: Auteurs
+    output: true
   uploads:
     title: Uploads
     output: true
@@ -24,9 +27,12 @@ description: 'Je reussirais dans certaines taches mieux que dans d''autres mais 
 
 '
 baseurl: 
-url: 
+url: www.jigeen.net
 adresse: 2, place de l'independance, Dakar Plateau
-twitter_username: jekyllrb
+twitter_url: https://twitter.com/jigeenofficiel
+instagram_url: https://instagram.com/jigeenofficiel/
+youtube_url: https://youtube.com/jigeenofficiel
+facebook_url: https://facebook.com/jigeen.net/
 github_username: jekyll
 markdown: kramdown
 gems:

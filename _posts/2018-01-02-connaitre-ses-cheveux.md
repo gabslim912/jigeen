@@ -3,7 +3,6 @@ title: Connaitre ses cheveux
 categories: Soins & beaute
 rubriques: Cheveux
 date: 2018-01-02 00:00:00 +0000
-author: Zeyna
 mini_desc: Connaitre ses cheveux pour bien en prendre soin
 main_img: "/uploads/2018/01/02/123.jpg"
 layout: post

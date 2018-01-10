@@ -40,30 +40,35 @@
                                 <ul class="navigation clearfix">
                                     <li class=""><a href="/">Acceuil </a>
                                     </li>
+                                    
                                     <li class="dropdown"><a href="#">Societe</a>
                                         <ul>
-                                            <li><a href="travel.html">Ado & Societe</a></li>
-                                            <li><a href="nature.html">Femme & Societe</a></li>
-                                            <li><a href="nature.html">Tradition</a></li>
-                                            
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Societe'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
                                         </ul>
                                         
                                     </li>
                                     <li class="dropdown"><a href="#">Soins & Beaute</a>
                                         <ul>
-                                            <li><a href="travel.html">Maquillage</a></li>
-                                            <li><a href="nature.html">Cheveux</a></li>
-                                            <li><a href="lifestyle.html">Trucs & Astuces</a></li>
-                                            
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Soins & Beaute'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
                                         </ul>
+                                        
                                     </li>
                                     <li class="dropdown"><a href="#">Actualites</a>
                                         <ul>
-                                            <li><a href="travel.html">People</a></li>
-                                            <li><a href="nature.html">Buzz</a></li>
-                                            
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Actualites'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
                                         </ul>
+                                        
                                     </li>
+                                    
                                     <li><a href="/about">A propos</a></li>
                                     <li><a href="/contact">Contact</a></li>
                                 </ul>
@@ -118,27 +123,30 @@
                                     </li>
                                     <li class="dropdown"><a href="#">Societe</a>
                                         <ul>
-                                            <li><a href="travel.html">Ado & Societe</a></li>
-                                            <li><a href="nature.html">Femme & Societe</a></li>
-                                            <li><a href="nature.html">Tradition</a></li>
-                                            
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Societe'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
                                         </ul>
                                         
                                     </li>
                                     <li class="dropdown"><a href="#">Soins & Beaute</a>
                                         <ul>
-                                            <li><a href="travel.html">Maquillage</a></li>
-                                            <li><a href="nature.html">Cheveux</a></li>
-                                            <li><a href="lifestyle.html">Trucs & Astuces</a></li>
-                                            
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Soins & Beaute'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
                                         </ul>
+                                        
                                     </li>
                                     <li class="dropdown"><a href="#">Actualites</a>
                                         <ul>
-                                            <li><a href="travel.html">People</a></li>
-                                            <li><a href="nature.html">Buzz</a></li>
-                                            
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Actualites'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
                                         </ul>
+                                        
                                     </li>
                                     <li><a href="/about">A propos</a></li>
                                     <li><a href="/contact">Contact</a></li>
